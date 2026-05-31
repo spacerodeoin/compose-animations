@@ -8,10 +8,11 @@ enum class Destination(val route: String, val title: String) {
     Scale("scale", "Scale — Hooke's Law"),
     Translation("translation", "Translation — Free Fall"),
     Rotation("rotation", "Rotation — Angular Motion"),
-    Alpha("alpha", "Alpha — Exponential Decay");
+    Alpha("alpha", "Alpha — Exponential Decay"),
+    Planets("planets", "Planets — Surface Gravity");
 
     companion object {
-        /** The four animation demos shown on the home grid (Home excluded). */
-        val demos = listOf(Scale, Translation, Rotation, Alpha)
+        /** The demos shown on the home grid (Home excluded). */
+        val demos = listOf(Scale, Translation, Rotation, Alpha, Planets)
     }
 }

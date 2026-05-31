@@ -13,6 +13,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.composeanimations.ui.alpha.AlphaScreen
 import com.example.composeanimations.ui.home.HomeScreen
+import com.example.composeanimations.ui.planets.PlanetsScreen
 import com.example.composeanimations.ui.rotation.RotationScreen
 import com.example.composeanimations.ui.scale.ScaleScreen
 import com.example.composeanimations.ui.translation.TranslationScreen
@@ -56,6 +57,9 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
         }
         composable(Destination.Alpha.route) {
             AlphaScreen(onBack = { navController.popBackStack() })
+        }
+        composable(Destination.Planets.route) {
+            PlanetsScreen(onBack = { navController.popBackStack() })
         }
     }
 }
